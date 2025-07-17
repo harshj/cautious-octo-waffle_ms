@@ -1,9 +1,14 @@
 let merchantIframe = null
 
+messageHandler = (message) => {
+    console.log(message)
+}
+
 onMerchantPageLoad = () => {
-    // const message = JSON.stringify({data: {sourceWindow:merchantIframe.contentWindow}})
     const win = merchantIframe.contentWindow
+    window.addEventListener("message", messageHandler)
     win.postMessage("init")
+
 }
 
 loadMerchantPage = () => {
