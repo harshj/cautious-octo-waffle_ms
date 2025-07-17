@@ -1,7 +1,8 @@
 let sourceWindow = null
 messageHandler = (event) => {
-    print(e)
-    sourceWindow = event.data.sourceWindow
+    console.log(event)
+    // sourceWindow = event.data.sourceWindow
+    sourceWindow = window.parent
 }
 
 window.addEventListener("message", messageHandler)
