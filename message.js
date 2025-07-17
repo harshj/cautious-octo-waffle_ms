@@ -2,6 +2,7 @@ let merchantIframe = null
 
 messageHandler = (message) => {
     console.log(message)
+    native_harshj.buttonClicked(message)
 }
 
 onMerchantPageLoad = () => {
