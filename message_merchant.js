@@ -1,9 +1,9 @@
-let sourceWindow = null
+let sourceWindow = window
 messageHandler = (event) => {
     console.log(event)
-    if (event.data == "init") {
-        sourceWindow = window.parent
-    }
+    // if (event.data == "init") {
+    //     sourceWindow = window.parent
+    // }
 }
 
 window.addEventListener("message", messageHandler)
