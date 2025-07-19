@@ -10,8 +10,8 @@ window.addEventListener("message", messageHandler)
 
 button1Handler = () => {
     console.log("Button 1 clicked")
-    if (sourceWindow !== null) {
-        sourceWindow.postMessage({
+    // if (sourceWindow !== null) {
+        window.postMessage({
             name: "Button1Event",
             data: {
                 title: "Button 1"
@@ -22,7 +22,7 @@ button1Handler = () => {
 }
 
 button2Handler = () => {
-    console.log("Button 2 clicked")
+    console.log("Button 2 clicked", sourceWindow)
     if (sourceWindow !== null) {
         sourceWindow.postMessage({
             name: "Button2Event",
