@@ -17,6 +17,7 @@ button1Handler = () => {
                 title: "Button 1"
             }
         })
+        console.log("Button 1 sent message")
     }
 }
 
@@ -29,6 +30,7 @@ button2Handler = () => {
                 title: "Button 2"
             }
         })
+        console.log("Button 2 sent message")
     }
 }
 
@@ -41,5 +43,6 @@ button3Handler = () => {
                 title: "Button 3"
             }
         })
+        console.log("Button 3 sent message")
     }
 }
