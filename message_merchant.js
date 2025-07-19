@@ -18,7 +18,7 @@ button1Handler = () => {
             }
         })
         console.log("Button 1 sent message")
-    }
+    // }
 }
 
 button2Handler = () => {
